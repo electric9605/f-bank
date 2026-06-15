@@ -27,7 +27,7 @@ jobs:
       - name: Start local server
         run: |
           python3 -m http.server 8000 &
-          sleep 2 # Даем пару секунд на старт
+          sleep 2 # пару секунд на старт
 
       - name: Run Selenium tests
         run: pytest tests/ -v --tb=short
